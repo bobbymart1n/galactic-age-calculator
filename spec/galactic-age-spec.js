@@ -1,4 +1,4 @@
-import { Conversion } from './src/Conversion.js';
+import { YearsToSeconds } from './../src/yearsToSeconds.js';
 describe('Galactic Age', function() {
   let date;
 
@@ -15,7 +15,10 @@ describe('Galactic Age', function() {
   it('should convert user birthdate to seconds', function() {
     expect(Date.parse("August 28, 1987") / 1000).toEqual(557132400);
   });
-  it('will subtract current age in seconds from current day in seconds', function() {
-    expect(Date.parse("April 20, 2018") / 1000 - Date.parse("August 28, 1987") / 1000).toEqual(967075200);
+  it('will subtract birthday in seconds from current day in seconds', function() {
+    expect((Date.parse("April 20, 2018") / 1000) - (Date.parse("August 28, 1987") / 1000)).toEqual(967075200);
+  });
+  it('will divide seconds difference from a year in seconds to get accurate age', function() {
+    expect(967075200 / YearsToSeconds.prototype.yearSecondsMath()).toEqual(30.665753424657535);
   });
 });
