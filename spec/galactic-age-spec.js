@@ -9,6 +9,6 @@ describe('Galactic Age', function() {
     expect(Date.parse("April 20, 2018")).toEqual(1524207600000);
   });
   it('should get current date in milliseconds', function() {
-    expect(Date.getMethod()).toEqual(1524207600);
+    expect(Date.parse("April 20, 2018") / 1000).toEqual(1524207600);
   });
 });
