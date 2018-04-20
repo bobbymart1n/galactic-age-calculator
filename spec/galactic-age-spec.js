@@ -21,10 +21,14 @@ describe('Galactic Age', function() {
   it('should convert user birthdate to seconds', function() {
     expect(Date.parse("August 28, 1987") / 1000).toEqual(557132400);
   });
-  it('will subtract birthday in seconds from current day in seconds', function() {
+  it('should subtract birthday in seconds from current day in seconds', function() {
     expect((Date.parse("April 20, 2018") / 1000) - (Date.parse("August 28, 1987") / 1000)).toEqual(967075200);
   });
-  it('will divide seconds difference from a year in seconds to get accurate age', function() {
+  it('should divide seconds difference from a year in seconds to get accurate age', function() {
     expect(967075200 / YearsToSeconds.prototype.yearSecondsMath()).toEqual(30.665753424657535);
+  });
+  it('should calculate the users age to find out how old they are on Mercury', function() {
+    const age = new Conversion(30);
+    expect(age.ageOnMercury()).toEqual(125);
   });
 });
