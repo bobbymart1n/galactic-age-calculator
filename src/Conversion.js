@@ -7,6 +7,10 @@ class Conversion {
     const seconds = this.age * YearsToSeconds.prototype.yearSecondsMath();
     return seconds;
   }
+  ageOnMercury() {
+    const mercuryAge = this.age / .24;
+    return mercuryAge;
+  }
 }
 
 export { Conversion };
