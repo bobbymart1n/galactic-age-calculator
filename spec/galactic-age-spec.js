@@ -1,10 +1,10 @@
 import { YearsToSeconds } from './../src/YearsToSeconds.js';
-import { Conversion } from './../src/Conversion.js';
+import { AgeConversion } from './../src/Conversion.js';
 describe('Galactic Age', function() {
   let date;
 
   it('should convert users age into seconds', function() {
-    const age = new Conversion(30);
+    const age = new AgeConversion(30);
     const ageSeconds = age.ageInSeconds();
     expect(ageSeconds).toEqual(946080000);
   });
@@ -28,7 +28,7 @@ describe('Galactic Age', function() {
     expect(967075200 / YearsToSeconds.prototype.yearSecondsMath()).toEqual(30.665753424657535);
   });
   it('should calculate the users age to find out how old they are on Mercury', function() {
-    const age = new Conversion(30);
+    const age = new AgeConversion(30);
     expect(age.ageOnMercury()).toEqual(125);
   });
 });

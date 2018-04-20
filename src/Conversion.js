@@ -1,5 +1,5 @@
 import { YearsToSeconds } from './YearsToSeconds.js';
-class Conversion {
+class AgeConversion {
   constructor(age) {
     this.age = age;
   }
@@ -11,6 +11,10 @@ class Conversion {
     const mercuryAge = this.age / .24;
     return mercuryAge;
   }
+  ageOnVenus() {
+    const venusAge = this.age / .62;
+    return venusAge;
+  }
 }
 
-export { Conversion };
+export { AgeConversion };
