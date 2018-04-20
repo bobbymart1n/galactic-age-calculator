@@ -57,4 +57,9 @@ describe('Galactic Age', function() {
     const venusLifeExpectancy = parseFloat(expectancy.expectancyOnVenus().toFixed(2));
     expect(venusLifeExpectancy).toEqual(135.48);
   });
+  it('should calculate the users age expectancy on Mars', function() {
+    const expectancy = new Expectancy(84);
+    const marsLifeExpectancy = parseFloat(expectancy.expectancyOnMars().toFixed(2));
+    expect(marsLifeExpectancy).toEqual(44.68);
+  });
 });
