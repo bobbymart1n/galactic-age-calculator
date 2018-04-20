@@ -7,6 +7,9 @@ An OO programming project for Epicodus
 This is an application that calculates what age the user is if they are on another planet.
 
 # Specifications
+* Program will get current date
+  * Input Example: **04.20.2018**
+  * Output Example: **04.20.2018**
 * Program will convert users current age into seconds
   * Input Example: **30**
   * Output Example: **946080000**
@@ -29,8 +32,11 @@ This is an application that calculates what age the user is if they are on anoth
   * Input Example: **30 / 11.86**
   * Output Example: **2.52**
 * Program will calculate how many years the user has left to live on each planet
-  * Input Example: **30 / 11.86**
-  * Output Example: **2.58**
+  * Input Example: **84 / .24 = 350 - 125 = 225**
+  * Output Example: **You have 225 more Mercury years to live**
+* Program will calculate how many years the user has lived past life expectancy
+  * Input Example: **90**
+  * Output Example: **You have lived 25 Mercury years longer than the expected 350 Mercury years**
 
 # Setup Requirements
 * Clone this repository
