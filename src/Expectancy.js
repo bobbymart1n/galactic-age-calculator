@@ -11,6 +11,9 @@ class Expectancy {
   expectancyOnMars() {
     return this.expectancy / 1.88;
   }
+  expectancyOnJupiter() {
+    return this.expectancy / 11.86;
+  }
 }
 
 export { Expectancy };
