@@ -1,10 +1,15 @@
+import { YearsToSeconds } from './yearsToSeconds.js';
 class Conversion {
   constructor(age) {
     this.age = age;
   }
-  yearInSeconds() {
-    const years = this.age * 365 * 24 * 60 * 60
-    console.log(years);
+  ageInSeconds() {
+    const seconds = this.age * YearsToSeconds.prototype.yearSecondsMath();
+    console.log(seconds);
+    return seconds;
+  }
+  secondsToYear() {
+    // const seconds
   }
 }
 

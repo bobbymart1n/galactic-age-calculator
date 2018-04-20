@@ -1,3 +1,4 @@
+import { Conversion } from './src/Conversion.js';
 describe('Galactic Age', function() {
   let date;
 

@@ -6,5 +6,5 @@ import './styles.css';
 
 $(function() {
   const dateTest = new Conversion(30);
-  console.log(dateTest.yearInSeconds());
+  console.log(dateTest.ageInSeconds());
 });
