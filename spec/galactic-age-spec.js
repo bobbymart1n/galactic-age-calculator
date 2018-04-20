@@ -36,4 +36,9 @@ describe('Galactic Age', function() {
     const ageShortened = parseFloat(age.ageOnVenus().toFixed(2));
     expect(ageShortened).toEqual(48.39);
   });
+  it('should calculate the users age to find out how old they are on Mars', function() {
+    const age = new AgeConversion(30);
+    const ageShortened = parseFloat(age.ageOnMars().toFixed(2));
+    expect(ageShortened).toEqual(15.96);
+  });
 });
