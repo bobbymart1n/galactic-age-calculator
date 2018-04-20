@@ -41,4 +41,9 @@ describe('Galactic Age', function() {
     const ageShortened = parseFloat(age.ageOnMars().toFixed(2));
     expect(ageShortened).toEqual(15.96);
   });
+  it('should calculate the users age to find out how old they are on Jupiter', function() {
+    const age = new AgeConversion(30);
+    const ageShortened = parseFloat(age.ageOnJupiter().toFixed(2));
+    expect(ageShortened).toEqual(2.53);
+  });
 });
