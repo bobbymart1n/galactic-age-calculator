@@ -77,5 +77,12 @@ describe('Galactic Age', function() {
     const yearsLeft = mercuryLifeExpectancy - ageOnMercury;
     expect(yearsLeft).toEqual(225);
   });
-  
+  it('should calculate how many years the user has left to live on Venus', function() {
+    age = new AgeConversion(30);
+    expectancy = new Expectancy(84);
+    const venusLifeExpectancy = expectancy.expectancyOnVenus();
+    const ageOnVenus = age.ageOnVenus();
+    const yearsLeft = parseFloat((venusLifeExpectancy - ageOnVenus).toFixed(2));
+    expect(yearsLeft).toEqual(87.1);
+  });
 });
