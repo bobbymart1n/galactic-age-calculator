@@ -7,6 +7,9 @@ An OO programming project for Epicodus
 This is an application that calculates what age the user is if they are on another planet.
 
 # Specifications
+* Program will convert users age into seconds
+  * Input Example: **30**
+  * Output Example: **946080000**
 * Program will get current date
   * Input Example: **04.20.2018**
   * Output Example: **04.20.2018**
