@@ -101,4 +101,12 @@ describe('Galactic Age', function() {
     const yearsLeft = parseFloat((jupiterLifeExpectancy - ageOnJupiter).toFixed(2));
     expect(yearsLeft).toEqual(-8.87);
   });
+  it('should calculate how many years the user lived past life expectancy on Mercury', function() {
+    age = new AgeConversion(90);
+    expectancy = new Expectancy(84);
+    const mercuryLifeExpectancy = expectancy.expectancyOnMercury();
+    const ageOnMercury = age.ageOnMercury();
+    const yearsPast = ageOnMercury - mercuryLifeExpectancy;
+    expect(yearsPast).toEqual(25);
+  });
 });
