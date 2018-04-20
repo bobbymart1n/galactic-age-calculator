@@ -85,4 +85,20 @@ describe('Galactic Age', function() {
     const yearsLeft = parseFloat((venusLifeExpectancy - ageOnVenus).toFixed(2));
     expect(yearsLeft).toEqual(87.1);
   });
+  it('should calculate how many years the user has left to live on Mars', function() {
+    age = new AgeConversion(30);
+    expectancy = new Expectancy(84);
+    const marsLifeExpectancy = expectancy.expectancyOnMars();
+    const ageOnMars = age.ageOnMars();
+    const yearsLeft = parseFloat((marsLifeExpectancy - ageOnMars).toFixed(2));
+    expect(yearsLeft).toEqual(28.72);
+  });
+  it('should calculate how many years the user has left to live on Jupiter', function() {
+    age = new AgeConversion(30);
+    expectancy = new Expectancy(84);
+    const jupiterLifeExpectancy = expectancy.expectancyOnJupiter();
+    const ageOnJupiter = age.ageOnMars();
+    const yearsLeft = parseFloat((jupiterLifeExpectancy - ageOnJupiter).toFixed(2));
+    expect(yearsLeft).toEqual(-8.87);
+  });
 });
