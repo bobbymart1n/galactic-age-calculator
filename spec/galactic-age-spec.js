@@ -52,4 +52,9 @@ describe('Galactic Age', function() {
     const mercuryLifeExpectancy = expectancy.expectancyOnMercury();
     expect(mercuryLifeExpectancy).toEqual(350);
   });
+  it('should calculate the users age expectancy on Venus', function() {
+    const expectancy = new Expectancy(84);
+    const venusLifeExpectancy = parseFloat(expectancy.expectancyOnVenus().toFixed(2));
+    expect(venusLifeExpectancy).toEqual(135.48);
+  });
 });
