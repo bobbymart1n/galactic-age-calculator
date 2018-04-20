@@ -8,24 +8,19 @@ class AgeConversion {
     this.jupiter = 11.86;
   }
   ageInSeconds() {
-    const seconds = this.age * YearsToSeconds.prototype.yearSecondsMath();
-    return seconds;
+    return this.age * YearsToSeconds.prototype.yearSecondsMath();
   }
   ageOnMercury() {
-    const mercuryAge = this.age / this.mercury;
-    return mercuryAge;
+    return this.age / this.mercury;
   }
   ageOnVenus() {
-    const venusAge = this.age / this.venus;
-    return venusAge;
+    return this.age / this.venus;
   }
   ageOnMars() {
-    const marsAge = this.age / this.mars;
-    return marsAge;
+    return this.age / this.mars;
   }
   ageOnJupiter() {
-    const jupiterAge = this.age / this.jupiter;
-    return jupiterAge;
+    return this.age / this.jupiter;
   }
 }
 
