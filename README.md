@@ -19,9 +19,12 @@ This is an application that calculates what age the user is if they are on anoth
 * Program will take users birthdate and convert it into seconds
   * Input Example: **08.28.1987**
   * Output Example: **557132400**
-* Program will compare birthdate in seconds to current date in seconds to get an accurate age
+* Program will compare birthdate in seconds to current date in seconds to get an accurate age in seconds
   * Input Example: **1524207600 - 557132400**
   * Output Example: **967075200**
+* Program will compare birthdate in seconds to current date in seconds to get an accurate age in years
+  * Input Example: **967075200 / 31536000**
+  * Output Example: **30.665753424657535**
 * Program will return the users age in Mercury years
   * Input Example: **30 / .24**
   * Output Example: **125**
