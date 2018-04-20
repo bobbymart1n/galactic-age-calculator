@@ -1,5 +1,6 @@
 import { YearsToSeconds } from './../src/YearsToSeconds.js';
 import { AgeConversion } from './../src/Conversion.js';
+import { Expectancy } from './../src/Expectancy.js';
 describe('Galactic Age', function() {
   let date;
 
@@ -45,5 +46,10 @@ describe('Galactic Age', function() {
     const age = new AgeConversion(30);
     const ageShortened = parseFloat(age.ageOnJupiter().toFixed(2));
     expect(ageShortened).toEqual(2.53);
+  });
+  it('should calculate the users age expectancy on Mercury', function() {
+    const expectancy = new Expectancy(84);
+    const mercuryLifeExpectancy = expectancy.expectancyOnMercury();
+    expect(mercuryLifeExpectancy).toEqual(350);
   });
 });
