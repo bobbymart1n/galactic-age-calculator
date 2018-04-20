@@ -31,4 +31,9 @@ describe('Galactic Age', function() {
     const age = new AgeConversion(30);
     expect(age.ageOnMercury()).toEqual(125);
   });
+  it('should calculate the users age to find out how old they are on Venus', function() {
+    const age = new AgeConversion(30);
+    const ageShortened = parseFloat(age.ageOnVenus().toFixed(2));
+    expect(ageShortened).toEqual(48.39);
+  });
 });
