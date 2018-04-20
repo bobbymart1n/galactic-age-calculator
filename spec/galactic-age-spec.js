@@ -3,6 +3,8 @@ import { AgeConversion } from './../src/Conversion.js';
 import { Expectancy } from './../src/Expectancy.js';
 describe('Galactic Age', function() {
   let date;
+  let age;
+  let expectancy;
 
   it('should convert users age into seconds', function() {
     const age = new AgeConversion(30);
@@ -29,50 +31,51 @@ describe('Galactic Age', function() {
     expect(967075200 / YearsToSeconds.prototype.yearSecondsMath()).toEqual(30.665753424657535);
   });
   it('should calculate the users age to find out how old they are on Mercury', function() {
-    const age = new AgeConversion(30);
+    age = new AgeConversion(30);
     expect(age.ageOnMercury()).toEqual(125);
   });
   it('should calculate the users age to find out how old they are on Venus', function() {
-    const age = new AgeConversion(30);
+    age = new AgeConversion(30);
     const ageShortened = parseFloat(age.ageOnVenus().toFixed(2));
     expect(ageShortened).toEqual(48.39);
   });
   it('should calculate the users age to find out how old they are on Mars', function() {
-    const age = new AgeConversion(30);
+    age = new AgeConversion(30);
     const ageShortened = parseFloat(age.ageOnMars().toFixed(2));
     expect(ageShortened).toEqual(15.96);
   });
   it('should calculate the users age to find out how old they are on Jupiter', function() {
-    const age = new AgeConversion(30);
+    age = new AgeConversion(30);
     const ageShortened = parseFloat(age.ageOnJupiter().toFixed(2));
     expect(ageShortened).toEqual(2.53);
   });
   it('should calculate the users age expectancy on Mercury', function() {
-    const expectancy = new Expectancy(84);
+    expectancy = new Expectancy(84);
     const mercuryLifeExpectancy = expectancy.expectancyOnMercury();
     expect(mercuryLifeExpectancy).toEqual(350);
   });
   it('should calculate the users age expectancy on Venus', function() {
-    const expectancy = new Expectancy(84);
+    expectancy = new Expectancy(84);
     const venusLifeExpectancy = parseFloat(expectancy.expectancyOnVenus().toFixed(2));
     expect(venusLifeExpectancy).toEqual(135.48);
   });
   it('should calculate the users age expectancy on Mars', function() {
-    const expectancy = new Expectancy(84);
+    expectancy = new Expectancy(84);
     const marsLifeExpectancy = parseFloat(expectancy.expectancyOnMars().toFixed(2));
     expect(marsLifeExpectancy).toEqual(44.68);
   });
   it('should calculate the users age expectancy on Jupiter', function() {
-    const expectancy = new Expectancy(84);
+    expectancy = new Expectancy(84);
     const jupiterLifeExpectancy = parseFloat(expectancy.expectancyOnJupiter().toFixed(2));
     expect(jupiterLifeExpectancy).toEqual(7.08);
   });
   it('should calculate how many years the user has left to live on Mercury', function() {
-    const age = new AgeConversion(30);
-    const expectancy = new Expectancy(84);
+    age = new AgeConversion(30);
+    expectancy = new Expectancy(84);
     const mercuryLifeExpectancy = expectancy.expectancyOnMercury();
     const ageOnMercury = age.ageOnMercury();
     const yearsLeft = mercuryLifeExpectancy - ageOnMercury;
     expect(yearsLeft).toEqual(225);
   });
+  
 });
