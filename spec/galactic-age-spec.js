@@ -15,6 +15,6 @@ describe('Galactic Age', function() {
     expect(Date.parse("August 28, 1987") / 1000).toEqual(557132400);
   });
   it('will subtract current age in seconds from current day in seconds', function() {
-    expect(Date.farse("April 20, 2018") / 1000 - Date.parse("August 28, 1987") / 1000).toEqual(967075200);
+    expect(Date.parse("April 20, 2018") / 1000 - Date.parse("August 28, 1987") / 1000).toEqual(967075200);
   });
 });
