@@ -1,7 +1,13 @@
-import { YearsToSeconds } from './../src/yearsToSeconds.js';
+import { YearsToSeconds } from './../src/YearsToSeconds.js';
+import { Conversion } from './../src/Conversion.js';
 describe('Galactic Age', function() {
   let date;
 
+  it('should convert users age into seconds', function() {
+    const age = new Conversion(30);
+    const ageSeconds = age.ageInSeconds();
+    expect(ageSeconds).toEqual(946080000);
+  });
   it('should get current date', function() {
     date = new Date();
     expect(date.toDateString()).toEqual("Fri Apr 20 2018");
