@@ -1,5 +1,5 @@
 import { YearsToSeconds } from './../src/YearsToSeconds.js';
-import { AgeConversion } from './../src/Conversion.js';
+import { AgeConversion } from './../src/AgeConversion.js';
 import { Expectancy } from './../src/Expectancy.js';
 describe('Galactic Age', function() {
   let date;
