@@ -15,6 +15,10 @@ class AgeConversion {
     const venusAge = this.age / .62;
     return venusAge;
   }
+  ageOnMars() {
+    const marsAge = this.age / 1.88;
+    return marsAge;
+  }
 }
 
 export { AgeConversion };
