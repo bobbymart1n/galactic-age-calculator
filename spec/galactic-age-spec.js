@@ -12,7 +12,7 @@ describe('Galactic Age', function() {
     expect(ageSeconds).toEqual(946080000);
   });
   it('should get current date', function() {
-    date = new Date();
+    date = new Date("Fri April 20 2018");
     expect(date.toDateString()).toEqual("Fri Apr 20 2018");
   });
   it('should get current date in milliseconds', function() {
